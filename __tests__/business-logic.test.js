@@ -13,23 +13,28 @@ describe ('Age', () => {
     expect(age.userAgeFuture).toEqual(37);
   });
 
-  test('return a users earth year age in mercury years', () => {
+  test('should return a users earth year age in mercury years', () => {
     age.calculateMercury();
     expect(age.mercury).toEqual(112.5);
   });
 
-  test('return a users earth year age in venus years', () => {
+  test('should return a users earth year age in venus years', () => {
     age.calculateVenus();
     expect(age.venus).toEqual(43.55);
   });
 
-  test('return a users earth year age in mars years', () => {
+  test('should return a users earth year age in mars years', () => {
     age.calculateMars();
     expect(age.mars).toEqual(14.36);
   });
 
-  test('return a users earth year age in jupiter years', () => {
+  test('should return a users earth year age in jupiter years', () => {
     age.calculateJupiter();
     expect(age.jupiter).toEqual(2.28);
   });
+
+  test('should return the years since a past birthday on earth', () => {
+  const yearsSinceBirthday = age.calculateYearsSince();
+  expect(yearsSinceBirthday).toEqual(10);
+});
 });
