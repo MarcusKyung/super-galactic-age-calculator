@@ -1,3 +1,5 @@
+import { Age } from '../src/js/business-logic.js';
+
 describe ('Age', () => {
   let age;
 
