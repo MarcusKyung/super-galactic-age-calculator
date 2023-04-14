@@ -33,11 +33,6 @@ describe ('Age', () => {
     expect(age.jupiter).toEqual(2.28);
   });
 
-  // test('should return the years since a past birthday on earth', () => {
-  // const yearsSinceBirthday = age.calculateYearsSince();
-  // expect(yearsSinceBirthday).toEqual(10);
-  // });
-
   test('should return years since a past birthday on each planet', () => {
     const yearsSinceBirthday = age.calculateYearsSince();
     expect(yearsSinceBirthday).toEqual(["10 Earth years have passed", "41.67 Mercury years have passed", "16.13 Venus years have passed", "5.32 Mars years have passed", "0.84 Jupiter years have passed"]);
@@ -46,7 +41,7 @@ describe ('Age', () => {
   test('should return an error when the userAge < userAgePast', () => {
     let errorAge = new Age(17, 27, 37)
     const yearsSinceBirthday = errorAge.calculateYearsSince();
-    expect(yearsSinceBirthday).toBe("Please enter a birthday in the past");
+    expect(yearsSinceBirthday).toBe("Please enter a age in the past");
   });
 
   test('should return years until a future birthday on each planet', () => {
@@ -57,6 +52,6 @@ describe ('Age', () => {
   test('should return an error when the userAge < userAgeFuture', () => {
     let errorAge = new Age(27, 17, 17)
     const yearsUntilBirthday = errorAge.calculateYearsUntil();
-    expect(yearsUntilBirthday).toBe("Please enter a birthday in the future");
+    expect(yearsUntilBirthday).toBe("Please enter a age in the future");
   });
 });
