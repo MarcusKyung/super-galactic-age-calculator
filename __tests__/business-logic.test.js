@@ -38,14 +38,14 @@ describe ('Age', () => {
   // expect(yearsSinceBirthday).toEqual(10);
   // });
 
+  test('should return years since a past birthday on each planet', () => {
+    const yearsSinceBirthday = age.calculateYearsSince();
+    expect(yearsSinceBirthday).toEqual(["10 Earth years have passed", "41.67 Earth years have passed", "16.13 Earth years have passed", "5.32 Earth years have passed", "0.84 Earth years have passed"]);
+  });
+
   test('should return an error when the userAge < userAgePast', () => {
     let errorAge = new Age(17, 27, 37)
     const yearsSinceBirthday = errorAge.calculateYearsSince();
     expect(yearsSinceBirthday).toBe("Please enter a birthday in the past");
-  });
-
-  test('should return years since a past birthday on each planet', () => {
-    const yearsSinceBirthday = age.calculateYearsSince();
-    expect(yearsSinceBirthday).toEqual([10, 41.67, 16.13, 5.32, 0.84]);
   });
 });
