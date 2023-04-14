@@ -5,12 +5,17 @@ export class Age{
   }
 
   calculateMercury() {
-    this.mercury = parseFloat((this.userAge / .24).toFixed(2))
-    return this.mercury 
+    this.mercury = parseFloat((this.userAge / .24).toFixed(2));
+    return this.mercury;
   }
 
   calculateVenus() {
-    this.venus = parseFloat((this.userAge / .62).toFixed(2))
-    return this.venus
+    this.venus = parseFloat((this.userAge / .62).toFixed(2));
+    return this.venus;
+  }
+
+  calculateMars() {
+    this.mars = parseFloat((this.userAge / 1.88).toFixed(2));
+    return this.mars;
   }
 }
