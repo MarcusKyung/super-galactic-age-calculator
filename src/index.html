@@ -4,9 +4,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Super Galactic Age Calculator</title>
 </head>
 <body>
-  
+  <h3>Enter your age, a past age, and a future age to see your age on different planets.</h3>
+  <form id="ageInput">
+    <label for="currentAge">Enter your age:</label>
+    <input id="currentAge" type="number" min="1">
+    <label for="pastAge">Enter a past age:</label>
+    <input id="pastAge" type="number" min="1">
+    <label for="futureAge">Enter a future age:</label>
+    <input id="futureAge" type="number" min="1">
+    <button type="submit">Submit</button>
+  </form>
+  <ul id="response">
+    <li id="mercuryAge"></li>
+  </ul>
 </body>
 </html>
