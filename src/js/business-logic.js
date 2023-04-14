@@ -45,4 +45,24 @@ export class Age{
       return "Please enter a birthday in the past";
     }
   }
+
+  calculateYearsUntil(){
+    let yearsUntilArray = [];
+    if (this.userAge < this.userAgeFuture) {
+      let yearsDelta = this.userAgeFuture - this.userAge;
+      let earthYearsUntil = yearsDelta;
+      let mercuryYearsUntil = parseFloat((yearsDelta / .24).toFixed(2));
+      let venusYearsUntil = parseFloat((yearsDelta / .62).toFixed(2));
+      let marsYearsUntil = parseFloat((yearsDelta / 1.88).toFixed(2));
+      let jupiterYearsUntil = parseFloat((yearsDelta / 11.86).toFixed(2));
+      yearsUntilArray.push(earthYearsUntil + " Earth years have yet to pass");
+      yearsUntilArray.push(mercuryYearsUntil + " Mercury years have yet to pass");
+      yearsUntilArray.push(venusYearsUntil + " Venus years have yet to pass");
+      yearsUntilArray.push(marsYearsUntil + " Mars years have yet to pass");
+      yearsUntilArray.push(jupiterYearsUntil + " Jupiter years have yet to pass");
+      return yearsUntilArray;
+    } else {
+      return "Please enter a birthday in the future";
+    }
+  }
 }
