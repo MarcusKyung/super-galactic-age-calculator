@@ -1,7 +1,9 @@
 export class Age{
   
-  constructor(userAge) {
+  constructor(userAge, userAgePast, userAgeFuture) {
     this.userAge = userAge;
+    this.userAgePast = userAgePast;
+    this.userAgeFuture = userAgeFuture;
   }
 
   calculateMercury() {
