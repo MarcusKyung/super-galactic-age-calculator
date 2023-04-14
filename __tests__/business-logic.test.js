@@ -4,11 +4,13 @@ describe ('Age', () => {
   let age;
 
   beforeEach(() => {
-    age = new Age(27);
+    age = new Age(27, 17, 37);
   });
 
-  test('should create a new age object using the user input of earth years', () => {
+  test('should create new age object with user age in earth years, a past birthday in earth years, and a future birthday in earth years', () => {
     expect(age.userAge).toEqual(27);
+    expect(age.userAgePast).toEqual(17);
+    expect(age.userAgeFuture).toEqual(37);
   });
 
   test('return a users earth year age in mercury years', () => {
