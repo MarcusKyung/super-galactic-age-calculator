@@ -25,4 +25,12 @@ export class Age{
     this.jupiter = parseFloat((this.userAge / 11.86).toFixed(2));
     return this.jupiter;
   }
+
+  calculateYearsSince(){
+  if (this.userAge > this.userAgePast) {
+    return this.userAge - this.userAgePast;
+  } else {
+    return "You can't do this with a larger age in the past";
+  }
+}
 }
