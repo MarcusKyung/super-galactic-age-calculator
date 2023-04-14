@@ -28,21 +28,21 @@ export class Age{
 
   calculateYearsSince(){
     let yearsSinceArray = [];
-  if (this.userAge > this.userAgePast) {
-    let yearsDelta = this.userAge - this.userAgePast;
-    let earthYearsSince = yearsDelta;
-    let mercuryYearsSince = parseFloat((yearsDelta / .24).toFixed(2));
-    let venusYearsSince = parseFloat((yearsDelta / .62).toFixed(2));
-    let marsYearsSince = parseFloat((yearsDelta / 1.88).toFixed(2));
-    let jupiterYearsSince = parseFloat((yearsDelta / 11.86).toFixed(2));
-    yearsSinceArray.push(earthYearsSince);
-    yearsSinceArray.push(mercuryYearsSince);
-    yearsSinceArray.push(venusYearsSince);
-    yearsSinceArray.push(marsYearsSince);
-    yearsSinceArray.push(jupiterYearsSince);
-    return yearsSinceArray;
-  } else {
-    return "Please enter a birthday in the past";
+    if (this.userAge > this.userAgePast) {
+      let yearsDelta = this.userAge - this.userAgePast;
+      let earthYearsSince = yearsDelta;
+      let mercuryYearsSince = parseFloat((yearsDelta / .24).toFixed(2));
+      let venusYearsSince = parseFloat((yearsDelta / .62).toFixed(2));
+      let marsYearsSince = parseFloat((yearsDelta / 1.88).toFixed(2));
+      let jupiterYearsSince = parseFloat((yearsDelta / 11.86).toFixed(2));
+      yearsSinceArray.push(earthYearsSince + " Earth years have passed");
+      yearsSinceArray.push(mercuryYearsSince + " Mercury years have passed");
+      yearsSinceArray.push(venusYearsSince + " Venus years have passed");
+      yearsSinceArray.push(marsYearsSince + " Mars years have passed");
+      yearsSinceArray.push(jupiterYearsSince + " Jupiter years have passed");
+      return yearsSinceArray;
+    } else {
+      return "Please enter a birthday in the past";
+    }
   }
-}
 }
