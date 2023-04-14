@@ -7,18 +7,31 @@
   <title>Super Galactic Age Calculator</title>
 </head>
 <body>
-  <h3>Enter your age, a past age, and a future age to see your age on different planets.</h3>
-  <form id="ageInput">
-    <label for="currentAge">Enter your age:</label>
-    <input id="currentAge" type="number" min="1">
-    <label for="pastAge">Enter a past age:</label>
-    <input id="pastAge" type="number" min="1">
-    <label for="futureAge">Enter a future age:</label>
-    <input id="futureAge" type="number" min="1">
-    <button type="submit">Submit</button>
-  </form>
-  <ul id="response">
-    <li id="mercuryAge"></li>
-  </ul>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <h1>Super Galactic Age Calculator</h1>
+        <h5>A solar year lasts 365 days on planet Earth. However, the length of a solar year varies from planet to planet. For instance, a solar year on Mercury lasts 88 days. Enter your age, a past age, and a future age to see your age on different planets.</h5>
+        <form id="ageInput">
+          <label for="currentAge">Enter your age:</label>
+          <input id="currentAge" type="number" min="1" required><br>
+          <label for="pastAge">Enter a past age:</label>
+          <input id="pastAge" type="number" min="1" required><br>
+          <label for="futureAge">Enter a future age:</label>
+          <input id="futureAge" type="number" min="1" required><br>
+          <button type="submit">Submit</button>
+        </form>
+        <!-- <img src="./assets/images/galaxy.jpg"> -->
+        <hr>
+        <ul id="response" class="hidden">
+          <li id="earthAge"></li>
+          <li id="mercuryAge"></li>
+          <li id="venusAge"></li>
+          <li id="marsAge"></li>
+          <li id="jupiterAge"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

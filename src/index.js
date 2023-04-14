@@ -19,16 +19,18 @@ function handleAgeForm() {
   const li3 = document.createElement("li");
   const li4 = document.createElement("li");
   const li5 = document.createElement("li");
-  li1.append(`Your age on Earth is ${userAge}.`);
-  li2.append(`Your age on Mercury is ${mercuryAgeValue}.`);
-  li3.append(`Your age on Venus is ${venusAgeValue}.`);
-  li4.append(`Your age on Mars is ${marsAgeValue}.`);
-  li5.append(`Your age on Jupiter is ${jupiterAgeValue}.`);
+  li1.append(`Your age on Earth is ${userAge}`);
+  li2.append(`Your age on Mercury is ${mercuryAgeValue}`);
+  li3.append(`Your age on Venus is ${venusAgeValue}`);
+  li4.append(`Your age on Mars is ${marsAgeValue}`);
+  li5.append(`Your age on Jupiter is ${jupiterAgeValue}`);
   document.querySelector('#earthAge').append(li1);
   document.querySelector('#mercuryAge').append(li2);
   document.querySelector('#venusAge').append(li3);
   document.querySelector('#marsAge').append(li4);
   document.querySelector('#jupiterAge').append(li5);
+  document.querySelector("#response").removeAttribute("class");
+
 }
 
 window.addEventListener("load", function() {
