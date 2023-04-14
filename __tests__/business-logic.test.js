@@ -56,7 +56,7 @@ describe ('Age', () => {
 
   test('should return an error when the userAge < userAgeFuture', () => {
     let errorAge = new Age(27, 17, 17)
-    const yearsUntilBirthday = errorAge.calculateYearsSince();
-    expect(yearsUntilBirthday).toBe("Please enter a birthday in the past");
+    const yearsUntilBirthday = errorAge.calculateYearsUntil();
+    expect(yearsUntilBirthday).toBe("Please enter a birthday in the future");
   });
 });
