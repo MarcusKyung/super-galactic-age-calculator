@@ -5,7 +5,7 @@ export class Age{
   }
 
   calculateMercury() {
-    this.mercury = this.userAge / .24
+    this.mercury = parseFloat((this.userAge / .24).toFixed(2))
     return this.mercury 
   }
 
