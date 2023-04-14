@@ -2,21 +2,18 @@
 
 #### By _**Marcus Kyung**_
 
-#### _This JavaScript application is designed to calculate a user's solar year/earth age on other planets._
+#### _This JavaScript application is designed to calculate a user's solar year/earth age on other planets as well as years from and to years in the future._
 
 ## Technologies Used
 
 * _JavaScript_
 * _Node Package Manager_
-* _@babel/core": "^7.18.6"_
-* _@babel/plugin-transform-modules-commonjs": "^7.18.6"_
+* _@babel/: "^7.18.6"_
 * _clean-webpack-plugin": "^3.0.0"_
 * _css-loader": "^3.6.0"_
-* _eslint": "^8.18.0"_
-* _eslint-webpack-plugin": "^2.7.0"_
+* _eslint": "^8.18.0"__
 * _file-loader": "^6.2.0"_
 * _html-loader": "^1.3.2"_
-* _html-webpack-plugin": "^4.5.2"_
 * _jest": "^24.9.0"_
 * _style-loader": "^1.3.0"_
 * _webpack": "4.46.0"_
@@ -25,7 +22,7 @@
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_This basic JS program takes a user's age then calculates and returns their age in Mercury years, Venus years, Mars years, and Jupiter years. This application can also determine how many years are between two years and calculates the delta value in Mercury years, Venus years, Mars years, and Jupiter years.
 
 ## Setup/Installation Requirements
 
@@ -33,15 +30,10 @@ _{This is a detailed description of your application. Give as much detail as nee
 * _Use local machine terminal to install all project packages using command ```$ npm install```_
 * _Use local machine terminal to build project using command ```$ npm build```_
 * _Use local machine terminal to start development server using command ```$ npm start```_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _No known bugs or issues_
 
 ## License
 
