@@ -18,4 +18,9 @@ export class Age{
     this.mars = parseFloat((this.userAge / 1.88).toFixed(2));
     return this.mars;
   }
+
+  calculateJupiter() {
+    this.jupiter = parseFloat((this.userAge / 11.86).toFixed(2));
+    return this.jupiter;
+  }
 }
