@@ -18,6 +18,6 @@ describe ('Age', () => {
 
   test('return a users earth year age in venus years', () => {
     age.calculateVenus();
-    expect(age.venus).toEqual(43.5483871);
+    expect(age.venus).toEqual(43.55);
   });
 });
