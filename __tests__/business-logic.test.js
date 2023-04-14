@@ -53,4 +53,10 @@ describe ('Age', () => {
     const yearsUntilBirthday = age.calculateYearsUntil();
     expect(yearsUntilBirthday).toEqual(["20 Earth years have yet to pass", "83.33 Mercury years have yet to pass", "32.26 Venus years have yet to pass", "10.64 Mars years have yet to pass", "1.69 Jupiter years have yet to pass"]);
   });
+
+  test('should return an error when the userAge < userAgeFuture', () => {
+    let errorAge = new Age(27, 17, 17)
+    const yearsUntilBirthday = errorAge.calculateYearsSince();
+    expect(yearsUntilBirthday).toBe("Please enter a birthday in the past");
+  });
 });
