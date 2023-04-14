@@ -37,4 +37,10 @@ describe ('Age', () => {
   const yearsSinceBirthday = age.calculateYearsSince();
   expect(yearsSinceBirthday).toEqual(10);
 });
+
+test('should return an error when the userAge < userAgePast', () => {
+  let errorAge = new Age(17, 27, 37)
+  const yearsSinceBirthday = errorAge.calculateYearsSince();
+  expect(yearsSinceBirthday).toBe("You can't do this with a larger age in the past");
+});
 });
