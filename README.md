@@ -30,10 +30,12 @@ _This basic JS program takes a user's age then calculates and returns their age 
 * _Use local machine terminal to install all project packages using command ```$ npm install```_
 * _Use local machine terminal to build project using command ```$ npm build```_
 * _Use local machine terminal to start development server using command ```$ npm start```_
+* _Enter a user's age, an age in the future, and an age in the past then press submit to see results_
 
 ## Known Bugs
 
-* _No known bugs or issues_
+* _Array results spacing is missing_
+* _Form can be submitted multiple times resulting in multiple outputs_
 
 ## License
 
