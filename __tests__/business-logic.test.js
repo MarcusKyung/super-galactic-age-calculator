@@ -8,12 +8,11 @@ describe ('Age', () => {
   });
 
   test('should create a new age object using the user input of earth years', () => {
-    expect(age.earth).toEqual(27);
+    expect(age.userAge).toEqual(27);
   });
 
   test('return a users earth year age in mercury years', () => {
-    let ageTest1 = new Age(27);
-    ageTest1.calculateMercury();
-    expect(age.earth).toEqual(112.5);
+    age.calculateMercury();
+    expect(age.mercury).toEqual(112.5);
   });
 });

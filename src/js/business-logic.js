@@ -1,6 +1,11 @@
 export class Age{
   
-  constructor(earth) {
-    this.earth = earth;
+  constructor(userAge) {
+    this.userAge = userAge;
+  }
+
+  calculateMercury() {
+    this.mercury = this.userAge / .24
+    return this.mercury 
   }
 }
