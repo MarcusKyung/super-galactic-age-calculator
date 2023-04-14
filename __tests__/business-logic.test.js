@@ -45,7 +45,7 @@ describe ('Age', () => {
   });
 
   test('should return years since a past birthday on each planet', () => {
-    const yearsSinceBirthday = errorAge.calculateYearsSince();
+    const yearsSinceBirthday = age.calculateYearsSince();
     expect(yearsSinceBirthday).toBe("10, 41.67, 16.13, 5.32, 0.84");
   });
 });
