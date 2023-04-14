@@ -27,10 +27,22 @@ export class Age{
   }
 
   calculateYearsSince(){
+    let yearsSinceArray = [];
   if (this.userAge > this.userAgePast) {
-    return this.userAge - this.userAgePast;
+    let yearsDelta = this.userAge - this.userAgePast;
+    let earthYearsSince = yearsDelta;
+    let mercuryYearsSince = parseFloat((yearsDelta / .24).toFixed(2));
+    let venusYearsSince = parseFloat((yearsDelta / .62).toFixed(2));
+    let marsYearsSince = parseFloat((yearsDelta / 1.88).toFixed(2));
+    let jupiterYearsSince = parseFloat((yearsDelta / 11.86).toFixed(2));
+    yearsSinceArray.push(earthYearsSince);
+    yearsSinceArray.push(mercuryYearsSince);
+    yearsSinceArray.push(venusYearsSince);
+    yearsSinceArray.push(marsYearsSince);
+    yearsSinceArray.push(jupiterYearsSince);
+    return yearsSinceArray;
   } else {
-    return "You can't do this with a larger age in the past";
+    return "Please enter a birthday in the past";
   }
 }
 }
