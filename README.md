@@ -1,15 +1,27 @@
-# _{Application Name}_
+# _Super Galactic Age Calculator_
 
 #### By _**Marcus Kyung**_
 
-#### _{Brief description of application}_
+#### _This JavaScript application is designed to calculate a user's solar year/earth age on other planets._
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* _JavaScript_
+* _Node Package Manager_
+* _@babel/core": "^7.18.6"_
+* _@babel/plugin-transform-modules-commonjs": "^7.18.6"_
+* _clean-webpack-plugin": "^3.0.0"_
+* _css-loader": "^3.6.0"_
+* _eslint": "^8.18.0"_
+* _eslint-webpack-plugin": "^2.7.0"_
+* _file-loader": "^6.2.0"_
+* _html-loader": "^1.3.2"_
+* _html-webpack-plugin": "^4.5.2"_
+* _jest": "^24.9.0"_
+* _style-loader": "^1.3.0"_
+* _webpack": "4.46.0"_
+* _webpack-cli": "^3.3.12"_
+* _webpack-dev-server": "3.11.3"_
 
 ## Description
 
