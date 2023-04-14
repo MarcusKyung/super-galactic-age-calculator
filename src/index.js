@@ -24,13 +24,22 @@ function handleAgeForm() {
   li3.append(`Your age on Venus is ${venusAgeValue}`);
   li4.append(`Your age on Mars is ${marsAgeValue}`);
   li5.append(`Your age on Jupiter is ${jupiterAgeValue}`);
-  document.querySelector('#earthAge').append(li1);
-  document.querySelector('#mercuryAge').append(li2);
-  document.querySelector('#venusAge').append(li3);
-  document.querySelector('#marsAge').append(li4);
-  document.querySelector('#jupiterAge').append(li5);
+  document.querySelector('#response').append(li1);
+  document.querySelector('#response').append(li2);
+  document.querySelector('#response').append(li3);
+  document.querySelector('#response').append(li4);
+  document.querySelector('#response').append(li5);
   document.querySelector("#response").removeAttribute("class");
 
+  const since = ageInput.calculateYearsSince();
+  const li6 = document.createElement("li");
+  li6.append(`${since}`);
+  document.querySelector('#response').append(li6);
+
+  const until = ageInput.calculateYearsUntil();
+  const li7 = document.createElement("li");
+  li7.append(`${until}`);
+  document.querySelector('#response').append(li7);
 }
 
 window.addEventListener("load", function() {
