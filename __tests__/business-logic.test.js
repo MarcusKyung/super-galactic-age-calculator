@@ -15,4 +15,9 @@ describe ('Age', () => {
     age.calculateMercury();
     expect(age.mercury).toEqual(112.5);
   });
+
+  test('return a users earth year age in venus years', () => {
+    age.calculateVenus();
+    expect(age.venus).toEqual(43.5483871);
+  });
 });
