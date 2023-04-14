@@ -42,7 +42,7 @@ export class Age{
       yearsSinceArray.push(jupiterYearsSince + " Jupiter years have passed");
       return yearsSinceArray;
     } else {
-      return "Please enter a birthday in the past";
+      return "Please enter a age in the past";
     }
   }
 
@@ -62,7 +62,7 @@ export class Age{
       yearsUntilArray.push(jupiterYearsUntil + " Jupiter years have yet to pass");
       return yearsUntilArray;
     } else {
-      return "Please enter a birthday in the future";
+      return "Please enter a age in the future";
     }
   }
 }
