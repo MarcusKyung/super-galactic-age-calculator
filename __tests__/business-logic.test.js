@@ -20,4 +20,9 @@ describe ('Age', () => {
     age.calculateVenus();
     expect(age.venus).toEqual(43.55);
   });
+
+  test('return a users earth year age in venus years', () => {
+    age.calculateMars();
+    expect(age.mars).toEqual(14.36);
+  });
 });
