@@ -41,12 +41,11 @@ describe ('Age', () => {
   test('should return an error when the userAge < userAgePast', () => {
     let errorAge = new Age(17, 27, 37)
     const yearsSinceBirthday = errorAge.calculateYearsSince();
-    expect(yearsSinceBirthday).toBe("You can't do this with a larger age in the past");
+    expect(yearsSinceBirthday).toBe("Please enter a birthday in the past");
   });
 
   test('should return years since a past birthday on each planet', () => {
-    let errorAge = new Age(17, 27, 37)
     const yearsSinceBirthday = errorAge.calculateYearsSince();
-    expect(yearsSinceBirthday).toBe("You can't do this with a larger age in the past");
+    expect(yearsSinceBirthday).toBe("10, 41.67, 16.13, 5.32, 0.84");
   });
 });
