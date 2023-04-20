@@ -28,8 +28,9 @@ _This basic JS program takes a user's age then calculates and returns their age 
 
 * _Download project repository from GH to local machine_
 * _Use local machine terminal to install all project packages using command ```$ npm install```_
-* _Use local machine terminal to build project using command ```$ npm build```_
-* _Use local machine terminal to start development server using command ```$ npm start```_
+* _Use local machine terminal to build project using command ```$ npm run build```_
+* _Use local machine terminal to start development server using command ```$ npm run start```_
+* _To confirm/test calculations use local machine terminal to initiate Jest tests by using command ```$ npm run test```. To verify results either view in terminal or open the the index.html file within the lcov-report directory within the coverage directory at root level. Once opened in browser the index.html file will provide detailed results of Jest testing._
 * _Enter a user's age, an age in the future, and an age in the past then press submit to see results_
 
 ## Known Bugs
